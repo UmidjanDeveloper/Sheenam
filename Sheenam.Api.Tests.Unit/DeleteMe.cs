@@ -3,9 +3,13 @@
 // Free To Use Comfort and Peace 
 //=================================================
 
-namespace Sheenam.Api
+using Xunit;
+
+namespace Sheenam.Api.Tests.Unit
 {
-    public class Startup
+    public class DeleteMe
     {
+        [Fact]
+        public void ShouldBeTrue() => Assert.True(true);
     }
 }
