@@ -1,6 +1,9 @@
-﻿namespace Sheenam.Api.Brokers.Storages
+﻿using Sheenam.Api.Models.Foundations.Guests;
+
+namespace Sheenam.Api.Brokers.Storages
 {
-    public interface IStorageBroker
+    public partial interface IStorageBroker
     {
+        ValueTask<Guest> InsertGuestAsync(Guest guest);
     }
 }
